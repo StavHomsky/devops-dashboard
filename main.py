@@ -1,5 +1,6 @@
 import sysinfo
 import logcheck
+import tasklist
 
 print("- [1] System Info")
 print("- [2] Log Checker")
@@ -13,6 +14,10 @@ while(user_select!= '0'):
     elif user_select == '2':
         print("Caliing check_log()... ")
         logcheck.check_log()
+    elif user_select == '3':
+        print("Calling manage_tasks()... ")
+        tasklist.manage_tasks()
+        
     print("- [1] System Info")
     print("- [2] Log Checker")
     print("- [3] Task List")
